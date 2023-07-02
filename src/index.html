@@ -6,16 +6,79 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href=""
+      href="./assets/images/favicon-32x32.png"
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Nuevo títuloo</title>
+    <title>Tarjeta interactiva</title>
   </head>
   <body>
+    <header class="header">
+
+      <picture>
+        <source
+        media="(min-width: 1024px)"
+        srcset="./assets/images/bg-main-desktop.png"
+        />
+        
+        <source
+        media="(min-width: 360px)"
+        srcset="./assets/images/bg-main-mobile.png"
+        />
+        
+        <img
+        class="banner__image"
+        src="./assets/images/bg-main-mobile.png"
+        alt="bg-mobile"
+        />
+      </picture>
+      <img class="card-cv" id="card-cv" src="./assets/images/bg-card-back.png" alt="Card Back">
+    <h2 class="card-cv__number" id="cv-number">000</h2></img>
+    
+      <img class="card-info" id="card-info" src="./assets/images/bg-card-front.png" alt="Card Front">
+      <div class="card-info__organization">
+
+        
+        <h2 class="card-info__number" id="card-number">0000 1111 2222 3333</h2>
+        <h2 class="card-info__name" id="card-name">NURIA RIVAS</h2>
+        <div class="dates">
+
+          <h2 class="dates__month" id="card-month">04</h2>
+          <h2 class="dates__year" id="card-year">23</h2>
+        </div>
+      </div>
+</img>
+    </header>
+    <main class="main" id="main">
+      <form class="form" id="form">
+        <div class="card-organization">
+          <label for="name">CARHOLDER NAME</label>
+          <input class="form-size" type="text" name="name" id="card-name"/>
+        </div>
+        <div class="card-organization">
+          <label for="number">CARD NUMBER</label>
+          <input class="form-size" type="text" name="card-number" id="card-number"/>
+        </div>
+        <div class="card-organization">
+          <label for="age">EXP. DATE (MM/YY)</label>
+          <input class="form-size" type="text" name="month" id="card-month"/>
+          <input class="form-size" type="text" name="year" id="card-year"/>
+        </div>
+        <div class="card-organization">
+          <label for="age">CV</label>
+          <input class="form-size" type="text" name="cv" id="card-cv"/>
+  
+        </div>
+        </div>
+        <input type="submit" value="Confirm"/>
+      </form>
+    </main>
     <script
       type="module"
       src="./js/index.js"

@@ -1,0 +1,57 @@
+.card-cv{
+    width: 286px;
+    height: 160px;
+    position: relative;
+    align-items: center;
+bottom: 200px;
+left: 60px;
+&__number{
+    position: relative;
+    bottom:300px;
+    left:260px;
+    color:white;
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+}
+.card-info{
+    width: 286px;
+    height: 160px;
+    position: relative;
+    align-items: center;
+    bottom:312px;
+    left:20px;
+&__organization{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  bottom:450px;
+  padding-top:20px;
+  color:white;
+}
+&__number{
+    font-size: 18px;
+    position: relative;
+    letter-spacing: 3px;
+    left:50px;
+}
+&__name{
+    font-size: 15px;
+    position: relative;
+    left:50px;
+}
+}
+.dates{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+    font-size: 8px;
+    position: relative;
+    bottom:37px;
+    left:80px;
+&__month{}
+&__year{}
+}
+
