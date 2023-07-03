@@ -50,17 +50,30 @@ formCvElement.addEventListener('input', event => {
     cardCvElement.textContent = formCvElement.value;
   }
 });
-
 formElement.addEventListener('submit', event => {
   event.preventDefault();
-  if (
-    formNameElement.value === '' ||
-    formNumberElement.value === '' ||
-    formMonthElement.value === '' ||
-    formYearElement.value === '' ||
-    formCvElement.value === ''
-  ) {
-    console.log('Te faltan datos del formulario');
+  let errors = false;
+  if (formNameElement.value === '') {
+    errors = true;
+    console.log('Te falta el nombre');
   }
-  console.log(event.target.name.value);
+  if (formNumberElement.value === '') {
+    errors = true;
+    console.log('Te falta el número');
+  }
+  if (formMonthElement.value === '') {
+    errors = true;
+    console.log('Te falta el mes');
+  }
+  if (formYearElement.value === '') {
+    errors = true;
+    console.log('Te falta el año');
+  }
+  if (formCvElement.value === '') {
+    errors = true;
+    console.log('Te falta el cv');
+  }
+  if (!errors) {
+    console.log('Todo listo');
+  }
 });
