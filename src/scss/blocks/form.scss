@@ -2,12 +2,14 @@
 .form {
   display: flex;
   flex-direction: column;
-
   gap: 20px;
+  margin-top:150px;
   @include responsive(desktop) {
+    margin-top:0;
+    width: 380px;
     position: absolute;
-    bottom: 200px;
-    left: 800px;
+    bottom:300px;
+    left:800px;
   }
 }
 .form-organization {
