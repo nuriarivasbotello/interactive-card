@@ -2,6 +2,7 @@
 .cards {
   position: relative;
   bottom: 200px;
+  color: white;
 }
 .card-cv {
   width: 286px;
@@ -21,4 +22,22 @@
   position: relative;
   left: 20px;
   bottom: 110px;
+  &__organization {
+    position: absolute;
+    bottom: 150px;
+    left: 45px;
+    font-size: 13px;
+  }
+  &__name {
+    position: absolute;
+    top: 20px;
+    font-size: 15px;
+  }
+  &__dates {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: black;
+  }
 }
