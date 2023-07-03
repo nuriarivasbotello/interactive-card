@@ -38,45 +38,47 @@
         alt="bg-mobile"
         />
       </picture>
-      <img class="card-cv" id="card-cv" src="./assets/images/bg-card-back.png" alt="Card Back">
-    <h2 class="card-cv__number" id="cv-number">000</h2></img>
-    
-      <img class="card-info" id="card-info" src="./assets/images/bg-card-front.png" alt="Card Front">
-      <div class="card-info__organization">
+      <div class="cards">
 
+        <img class="card-cv" id="card-cv" src="./assets/images/bg-card-back.png" alt="Card Back">
+        <h2 class="card-cv__number" id="card-cv-number">000</h2>
         
-        <h2 class="card-info__number" id="card-number">0000 1111 2222 3333</h2>
-        <h2 class="card-info__name" id="card-name">NURIA RIVAS</h2>
-        <div class="dates">
-
-          <h2 class="dates__month" id="card-month">04</h2>
-          <h2 class="dates__year" id="card-year">23</h2>
+        <img class="card-info" id="card-info" src="./assets/images/bg-card-front.png" alt="Card Front">
+        <div class="card-info__organization">
+          
+          
+          <h2 class="card-info__number" id="card-number">0000 0000 0000 0000</h2>
+          <h2 class="card-info__name" id="card-name">NURIA RIVAS</h2>
+          <div class="dates">
+            
+            <h2 class="dates__month" id="card-month">MM</h2>
+            <h2 class="dates__year" id="card-year">YY</h2>
+          </div>
         </div>
       </div>
-</img>
     </header>
     <main class="main" id="main">
       <form class="form" id="form">
-        <div class="card-organization">
+        <div class="form-organization" id="carholder-name">
           <label for="name">CARHOLDER NAME</label>
-          <input class="form-size" type="text" name="name" id="card-name-form"/>
+          <input class="form-size" type="text" name="name" id="name-form"/>
         </div>
-        <div class="card-organization">
+        <div class="form-organization" id="card-number-space">
           <label for="number">CARD NUMBER</label>
-          <input class="form-size" type="text" name="card-number" id="card-number-form"/>
+          <input class="form-size" type="text" name="number" id="number-form"/>
         </div>
-        <div class="card-organization">
+        <div class="form-organization">
           <label for="age">EXP. DATE (MM/YY)</label>
-          <input class="form-size" type="text" name="month" id="card-month"/>
-          <input class="form-size" type="text" name="year" id="card-year"/>
+          <input class="form-size" type="text" name="month" id="month-form"/>
+          <input class="form-size" type="text" name="year" id="year-form"/>
         </div>
-        <div class="card-organization">
+        <div class="form-organization">
           <label for="age">CV</label>
-          <input class="form-size" type="text" name="cv" id="card-cv"/>
+          <input class="form-size" type="text" name="cv" id="cv-form"/>
   
         </div>
         </div>
-        <input type="submit" value="Confirm"/>
+        <input type="submit" id="confirm" value="Confirm"/>
       </form>
     </main>
     <script

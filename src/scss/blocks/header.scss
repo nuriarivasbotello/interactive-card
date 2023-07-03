@@ -1,1 +1,8 @@
-
+@use '../mixins/responsive.scss' as *;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include responsive(desktop) {
+  }
+}

@@ -1,24 +1,23 @@
 @use '../mixins/responsive.scss' as *;
-.form{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    bottom: 400px;
-    gap: 20px;
-    @include responsive(desktop) {
-        position: absolute;
-        bottom:200px;
-        left:800px;
-      }
+.form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  @include responsive(desktop) {
+    position: absolute;
+    bottom: 200px;
+    left: 800px;
+  }
 }
-.card-organization{
-    width: 327px;
-    display: flex;
-    flex-direction: column;
-    margin:auto;
-    gap: 10px;
+.form-organization {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 10px;
 }
-.form-size{
-    height: 50px;
-    border-radius: 0.5rem;;
+.form-size {
+  height: 50px;
+  border-radius: 0.5rem;
 }
