@@ -1,10 +1,17 @@
+@use '../mixins/responsive.scss' as *;  
 .card-cv{
     width: 286px;
     height: 160px;
     position: relative;
     align-items: center;
-bottom: 200px;
-left: 60px;
+    bottom: 200px;
+    left: 60px;
+    @include responsive(desktop) {
+        width: 447px;
+        height: 245px;
+        bottom:400px;
+        left:200px;
+    }
 &__number{
     position: relative;
     bottom:300px;
@@ -12,6 +19,10 @@ left: 60px;
     color:white;
     font-size: 15px;
     letter-spacing: 4px;
+    @include responsive(desktop) {
+       bottom:545px;
+        left:540px;
+    }
 }
 }
 .card-info{
@@ -21,6 +32,12 @@ left: 60px;
     align-items: center;
     bottom:312px;
     left:20px;
+    @include responsive(desktop) {
+        width: 447px;
+        height: 245px;
+        bottom:1050px;
+        left:150px;
+    }
 &__organization{
   display: flex;  
   flex-direction: column;
@@ -29,17 +46,32 @@ left: 60px;
   bottom:450px;
   padding-top:20px;
   color:white;
+  @include responsive(desktop) {
+    width: 447px;
+    height: 245px;
+    bottom:1250px;
+    left:150px;
+ 
+}
 }
 &__number{
     font-size: 18px;
     position: relative;
     letter-spacing: 3px;
     left:50px;
+    @include responsive(desktop) {
+        font-size: 25px;
+        left:70px;
+    }
 }
 &__name{
     font-size: 15px;
     position: relative;
     left:50px;
+    @include responsive(desktop) {
+       
+        left:70px;
+    }
 }
 }
 .dates{
@@ -51,6 +83,10 @@ left: 60px;
     position: relative;
     bottom:37px;
     left:80px;
+    @include responsive(desktop) {
+       
+        left:125px;
+    }
 &__month{}
 &__year{}
 }
